@@ -1,0 +1,11 @@
+<div th:fragment="nav()">
+    <!-- Barra de navegacion -->
+    <nav class="barra_navegacion">
+        <img th:src="@{/imagenes/tienda.png}" alt="Logo del negocio">
+        <a th:href="@{/inicio}">Inicio</a>
+        <a th:href="@{/menu_productos}">Menú</a>
+        <a th:href="@{/realizar_pedidos}">Hacer un pedido</a>
+        <a th:href="@{/pedidos_realizados}">Mis pedidos</a>
+        <a th:href="@{/}">Cerrar Sesión</a>
+    </nav>
+</div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+</head>
+
+<body>
+
+<div th:replace="fragmentos/navegacionusuario :: nav()"></div>
+
+<main class="contenedor">
+    <h1>Iniciar sesión</h1>
+    <p>Ingresá tu nombre de usuario para continuar.</p>
+
+    <div class="cuadro">
+        <form>
+            <label>Nombre de usuario</label>
+            <input type="text" placeholder="Escribe el nombre de usuario">
+
+            <button type="submit" class="boton">Ingresar</button>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+h1 {
+    color: #1E3F20;
+}
+
+/* navegacion */
+.barra_navegacion {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: #1E3F20;
+    padding: 10px 30px;
+}
+
+.barra_navegacion img {
+    height: 50px;
+    width: auto;
+}
+
+.barra_navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.barra_navegacion a:hover {
+    text-decoration: underline;
+}
+
+/* CONTENIDO */
+.contenedor {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.cuadro {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* TABLAS */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th {
+    background-color: #1E3F20;
+    color: #ffffff;
+    text-align: left;
+    padding: 10px;
+}
+
+.tabla td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* FORMULARIOS */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.boton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1E3F20;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #4A7856;
+}
