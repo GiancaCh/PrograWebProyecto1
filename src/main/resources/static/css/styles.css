@@ -12,7 +12,7 @@ h1 {
 /* navegacion */
 .barra_navegacion {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     gap: 25px;
     background-color: #1E3F20;
     padding: 10px 30px;
