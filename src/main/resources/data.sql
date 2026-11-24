@@ -1,7 +1,7 @@
 --Usuarios
 
 --Productos
-INSERT INTO product (product_name, stock_quantity, unit_price) VALUES
+INSERT IGNORE INTO product (product_name, stock_quantity, unit_price) VALUES
    ('Manzana roja', 50, 300),
    ('Banano', 80, 100),
    ('Refresco de cola (600 ml)', 40, 950),
