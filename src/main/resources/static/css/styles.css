@@ -14,7 +14,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: 25px;
-    background-color: #1E3F20;
+    background-color: seagreen;
     padding: 10px 30px;
 }
 
@@ -48,6 +48,35 @@ h1 {
     margin-top: 20px;
 }
 
+/* ====== CUADRO DE PRODUCTOS ====== */
+#lista_productos {
+    text-align: center;
+}
+
+.cuadro_pequeno {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.cuadro_pequeno:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);
+}
+
+.cuadro_pequeno img {
+    width: 65px;
+    height: 65px;
+}
+
 /* TABLAS */
 .tabla {
     width: 100%;
@@ -64,6 +93,14 @@ h1 {
 .tabla td {
     padding: 10px;
     border-bottom: 1px solid #dddddd;
+}
+
+.frase_tienda {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: seagreen;
+    margin-top: 25px;
 }
 
 /* FORMULARIOS */
@@ -97,4 +134,25 @@ textarea {
 
 .boton:hover {
     background-color: #4A7856;
+}
+
+.pie_pagina {
+    background-color: seagreen;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.pie_pagina a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.pie_pagina a:hover {
+    text-decoration: underline;
+    color: darkgreen;
 }
