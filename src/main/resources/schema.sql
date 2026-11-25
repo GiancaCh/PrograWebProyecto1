@@ -16,14 +16,16 @@ CREATE TABLE IF NOT EXISTS product (
     stock_quantity  INT NOT NULL,
     unit_price      INT NOT NULL,
 
-    CONSTRAINT uq_product_name UNIQUE (product_name)
+    CONSTRAINT uq_product_name UNIQUE (product_name),
+    CONSTRAINT chk_stock_quantity CHECK (stock_quantity >= 0),
+    CONSTRAINT chk_unit_price CHECK (unit_price >= 0)
 );
 
 CREATE TABLE IF NOT EXISTS store_order (
    order_id            BIGINT AUTO_INCREMENT PRIMARY KEY,
    user_id             BIGINT NOT NULL,
    product_id          BIGINT NOT NULL,
-   order_date          DATE NOT NULL,
+   order_date          DATETIME NOT NULL,
    product_quantity    INT NOT NULL,
    order_status        VARCHAR(20) NOT NULL,
 
@@ -31,5 +33,6 @@ CREATE TABLE IF NOT EXISTS store_order (
     REFERENCES user (user_id) ON DELETE CASCADE,
     CONSTRAINT fk_so_product FOREIGN KEY (product_id)
     REFERENCES product(product_id) ON DELETE CASCADE,
+    CONSTRAINT chk_product_quantity CHECK (product_quantity > 0),
     CONSTRAINT chk_so_order_status CHECK (order_status IN ('NUEVO', 'EN_PREPARACION', 'ENTREGADO'))
 );

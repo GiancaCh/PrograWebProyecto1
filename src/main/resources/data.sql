@@ -1,4 +1,10 @@
 --Usuarios
+INSERT IGNORE INTO user (user_name, username, email, user_type)
+VALUES ("Jefferson Gómez Fonseca", "Jeff_gf", "jeffersongf@gmail.com", "ADMIN");
+
+INSERT IGNORE INTO user (user_name, username, email, user_type)
+VALUES ("Giancarlo Chacón Chavarría", "Gian_cc", "giancc@gmail.com", "ADMIN");
+
 
 --Productos
 INSERT IGNORE INTO product (product_name, stock_quantity, unit_price) VALUES
